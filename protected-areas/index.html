@@ -8,23 +8,34 @@
     h1 { color: #2e7d32; }
     a { color: #2e7d32; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .pa-card { margin-bottom: 25px; }
+    .pa-card { 
+      border: 1px solid #ccc; 
+      padding: 15px; 
+      margin-bottom: 20px; 
+      border-radius: 8px; 
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pa-card img { width: 100%; max-width: 400px; border-radius: 5px; }
   </style>
 </head>
 <body>
 
   <a href="/">← Back to Home</a>
 
-  <h1>Protected Areas</h1>
+  <h1>Protected Areas Catalog</h1>
   <p>This page contains GIS analyses and literature libraries for Cambodia’s protected areas.</p>
 
+  <!-- PLWS card -->
   <div class="pa-card">
     <h2><a href="plws.html">Prey Lang Wildlife Sanctuary (PLWS)</a></h2>
+    <img src="/images/plws_thumbnail.jpg" alt="PLWS Map Thumbnail">
     <p>GIS analysis, forest loss, zoning, and literature library for PLWS.</p>
   </div>
 
+  <!-- PTNHP card -->
   <div class="pa-card">
     <h2><a href="ptnhp.html">Phnom Tbeng Natural Heritage Park (PTNHP)</a></h2>
+    <img src="/images/ptnhp_thumbnail.jpg" alt="PTNHP Map Thumbnail">
     <p>Overview, spatial assessments, and document library for PTNHP.</p>
   </div>
 
